@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "760095282137",
+    "firebase_url": "https://urbanhouser11-h9866.firebaseio.com",
+    "project_id": "urbanhouser11-h9866",
+    "storage_bucket": "urbanhouser11-h9866.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760095282137:android:3c97d956062ee362b87fc8",
+        "android_client_info": {
+          "package_name": "com.uh.urbanhouser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760095282137-7a4venvgerbhak5lks82olj4i6rpu5ug.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uh.urbanhouser",
+            "certificate_hash": "63e8123e161aec0844f8964a6a4429338b0d2720"
+          }
+        },
+        {
+          "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpKumEcpJ3Ay0VKkB7c2xI0XUfJId46SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760095282137:android:e687232371c80fd2b87fc8",
+        "android_client_info": {
+          "package_name": "com.uh.urbanhouseradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760095282137-m1qu8i79112eqjiu3qa3tq46pi5m1n31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uh.urbanhouseradmin",
+            "certificate_hash": "63e8123e161aec0844f8964a6a4429338b0d2720"
+          }
+        },
+        {
+          "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpKumEcpJ3Ay0VKkB7c2xI0XUfJId46SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760095282137:android:10a7ce4ec343d0b6b87fc8",
+        "android_client_info": {
+          "package_name": "com.uh.urbanhouserowner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760095282137-1957avo3otsjmnps9cfgk48u6rgvp7oj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uh.urbanhouserowner",
+            "certificate_hash": "63e8123e161aec0844f8964a6a4429338b0d2720"
+          }
+        },
+        {
+          "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpKumEcpJ3Ay0VKkB7c2xI0XUfJId46SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760095282137:android:70c9f596858cd8cbb87fc8",
+        "android_client_info": {
+          "package_name": "com.uh.urbanhousers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760095282137-75a88risp0lfd07na1uoqoj08in9vqvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uh.urbanhousers",
+            "certificate_hash": "63e8123e161aec0844f8964a6a4429338b0d2720"
+          }
+        },
+        {
+          "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpKumEcpJ3Ay0VKkB7c2xI0XUfJId46SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760095282137-ljj21sg4vsjksurd7kvstbbti4cbe01t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

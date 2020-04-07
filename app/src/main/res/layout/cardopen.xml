@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardopen">
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_keyboard_arrow_left_black_32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/scrolllll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottombuttons"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/propertypictureextend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:src="@drawable/ic_photo_camera_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
+
+                    <!--<TextView
+                        android:id="@+id/propertyname"
+                        android:layout_marginTop="16dp"
+                        android:text="The property name:3 bhk house in bhanwarkuan near satyasai road"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"/>-->
+
+                    <TextView
+                        android:id="@+id/propaddress"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="The address will be written here like sector-10,vijay nagar,indore(mp)"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/propcity"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="cityname here"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:textSize="14sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs. "
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:id="@+id/propprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price :Rs. 6900/-"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Available from  :  "
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:id="@+id/avaidate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="not given"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Owner name  :  "
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:id="@+id/ownername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="not given"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="5"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Owner contact  :  "
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:id="@+id/ownercontact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="not given"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="3"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4 Beds"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp"
+                            android:layout_weight="1"
+                            android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" 3 baths"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="40000 sqft"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>-->
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home Details"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="true"
+                        android:textSize="14dp"
+                        android:text="home in bhanwarkuan and with other details like bhk cinfig and owner name and details like pets ALLOWED WITH ECO FRIENDLY ENVIRONMRNT WITH FRESH AIR IN THE MORNING AND FULLY LOADED WITH FACILITIES."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home Features"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:text="single family" />-->
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottombuttons"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:weightSum="2"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/editbutt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/roundshape"
+            android:layout_weight="2"
+            android:text="EDIT or delete request" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_property">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="name,"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/user_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/edittextround"
+                        android:ems="10"
+                        android:hint=" Enter your name"
+                        android:inputType="textPersonName"
+                        android:lineSpacingExtra="10dp"
+                        android:padding="8dp"
+                        android:textCursorDrawable="@null" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="contact number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/phone_Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/roundshape"
+                        android:ems="10"
+                        android:hint=" +91 XXXXXXXXXX"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="8dp"
+                        android:textCursorDrawable="@null" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="city name"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/roundshape"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/locality"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="Select locality"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/roundshape"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="Number of bedrooms"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="6">
+
+                        <RadioButton
+                            android:id="@+id/radio_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:onClick="checkButton"
+                            android:text="1RK" />
+
+                        <RadioButton
+                            android:id="@+id/radio_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="1 BHK" />
+
+                        <RadioButton
+                            android:id="@+id/radio_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="2BHK" />
+
+                        <RadioButton
+                            android:id="@+id/radio_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:onClick="checkButton"
+                            android:text="3BHK" />
+
+                        <RadioButton
+                            android:id="@+id/radio_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="4BHK" />
+
+                        <RadioButton
+                            android:id="@+id/radio_six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="4+BHK" />
+
+
+                    </RadioGroup>
+
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+
+                        <Button
+                            android:id="@+id/onerk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:text="1 RK" />
+
+
+                        <Button
+                            android:id="@+id/onebhk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:text="1 BHK" />
+
+
+                        <Button
+                            android:id="@+id/twobhk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:text="2 BHK" />
+
+
+                        <Button
+                            android:id="@+id/threebhk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:text="3 BHK" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <Button
+                            android:id="@+id/fourbhk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:text="4 BHK" />
+
+                        <Button
+                            android:id="@+id/fourbhkplus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:text="4+ BHK" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btround"
+                            android:visibility="invisible"
+                            android:text="4 BHK" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:visibility="invisible"
+                            android:background="@drawable/btround"
+                            android:text="4+ BHK" />
+
+                    </LinearLayout>-->
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Furnishing status"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupgfurnished"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="6">
+
+                        <RadioButton
+                            android:id="@+id/nofurnish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:onClick="checkButton"
+                            android:text="No Furnishing" />
+
+                        <RadioButton
+                            android:id="@+id/semifurnish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="Semi Furnished" />
+
+                        <RadioButton
+                            android:id="@+id/fullyfurnish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="checkButton"
+                            android:text="Fully Furnished" />
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="full address"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/Add_ress"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/roundshape"
+                        android:ems="10"
+                        android:hint=" Address"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textCursorDrawable="@null" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="pin code"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/pin_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/roundshape"
+                        android:ems="10"
+                        android:hint=" Pin code"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="8dp"
+                        android:textCursorDrawable="@null" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="Your property is vacant from : "
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="8dp"
+                        android:paddingLeft="3dp"
+                        android:text="dd/mm/yyyy"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/textView67"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="expected price"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/roundshape"
+                        android:ems="10"
+                        android:hint="Price rupees/month"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="8dp"
+                        android:textCursorDrawable="@null" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="3dp"
+                        android:text="one sample picture"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:id="@+id/prop_pic1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:src="@drawable/ic_photo_camera_black_24dp" />
+
+                        <!--<ImageView
+                            android:id="@+id/prop_pic2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+                        <ImageView
+                            android:id="@+id/prop_pic3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/ic_menu_camera" />-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundshape"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

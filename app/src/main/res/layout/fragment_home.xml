@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addproperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_marginright"
+        android:layout_marginBottom="300dp"
+        android:visibility="invisible"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addhostel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_marginright"
+        android:layout_marginBottom="240dp"
+        android:visibility="invisible"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_home_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_addbusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:visibility="invisible"
+        android:layout_marginRight="@dimen/fab_marginright"
+        android:layout_marginBottom="180dp"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_home_black_50dp" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postsRecyyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_roompartner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="80dp"
+        app:pressedTranslationZ="12dp"
+        android:backgroundTint="#1875ff"
+        android:src="@drawable/ic_home_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginRight="16dp"
+        app:pressedTranslationZ="12dp"
+        android:backgroundTint="#1875ff"
+        android:src="@drawable/ic_add_black_24dp" />
+
+
+
+
+</FrameLayout>
